@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body-fixed" style="background-color: white;">
+    <!-- start of header  -->
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="meraki.jpeg" width="160" height="140" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="main-navigation">
+                        <button class="menu-toggle"><span></span><span></span></button>
+                        <nav class="header-menu">
+                            <ul class="menu food-nav-menu" >
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="login.php">Order</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-right">
+                            <form action="#" class="header-search-form for-des">
+                                <input type="search" class="form-input" placeholder="Search Here...">
+                                <button type="submit">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </form>
+                            <a href="javascript:void(0)" class="header-btn header-cart">
+                                <i class="uil uil-shopping-bag"></i>
+                                <span class="cart-number">3</span>
+                            </a>
+                            <a href="javascript:void(0)" class="header-btn">
+                                <i class="uil uil-user-md"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends  -->
+
+    <div id="viewport">
+        <div id="js-scroll-content">
+            <section class="main-banner" id="home">
+                <div class="js-parallax-scene">
+                    <div class="banner-shape-1 w-100" data-depth="0.30">
+                        <img src="assets/images/berry.png" alt="">
+                    </div>
+                    <div class="banner-shape-2 w-100" data-depth="0.25">
+                        <img src="assets/images/leaf.png" alt="">
+                    </div>
+                </div>
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="banner-text">
+                                    <h1 class="h1-title">
+                                        Welcome to 
+                                        <span style="color: rgb(236, 89, 111);">meraki</span>
+                                       <span style="font-size: 40px; color: rgb(216, 140, 203);">byLaya</span>
+                                    </h1>
+                                    <p><u><a href="login.php">Custom made Cakes & Cupcakes <strong>~Login </strong></a></u></p>
+                                       <b><ul type="disc">
+                                        <li>Pre-order basis</li>
+                                        <li>Delivery available in Matara town area</li>
+                                        <li>Pickups-Pamburana</li></b>
+                                         </ul>
+                                    <div class="banner-btn mt-4">
+                                        <a href="#menu" class="sec-btn">Check our Menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="banner-img-wp">
+                                    <div class="banner-img" style="background-image: url(assets/images/main-b.jpeg);">
+                                    </div>
+                                </div>
+                                <div class="banner-img-text mt-4 m-auto">
+                                    <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"   class="h5-title">meraki byLaya</h5>
+                                    <p >Made With Love</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="brands-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="brand-title mb-5">
+                                <h5 class="h5-title">Trusted by Thousands of Cake-Lovers</h5>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-sec section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="sec-title text-center mb-5">
+                                <p class="sec-sub-title mb-3">About Us</p>
+                                <h2 class="h2-title">Discover our <span>Cake Business</span></h2>
+                                <div class="sec-title-shape mb-4">
+                                    <img src="assets/images/title-shape.svg" alt="">
+                                </div>
+                                <p>My love for cakes began with a single bite, sparking a passion that grew into a lifelong journey. For me, cakes are more than just desserts; they're edible art. I strive to blend taste with aesthetic beauty, ensuring each creation is a feast for both the palate and the eyes. Every detail matters, from the swirl of frosting to the placement of decorations. My goal is to craft cakes that tell a story, creating unforgettable experiences for those who enjoy them.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 m-auto">
+                            <div class="about-video">
+                                <div class="about-video-img" style="background-image: url(assets/images/about.jpeg);">
+                                </div>
+                                <div class="play-btn-wp">
+                                    <a href="assets/images/video.mp4" data-fancybox="video" class="play-btn">
+                                        <i class="uil uil-play"></i>
+
+                                    </a>
+                                    <span>Watch meraki-collection</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section style="background-image: url(assets/images/menu-bg.png);"
+                class="our-menu section bg-light repeat-img" id="menu">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">our menu</p>
+                                    <h2 class="h2-title">wake up early, <span>eat Cakes & Be healthy</span></h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                                  
+                        <div class="menu-list-row">
+                            <div class="row g-xxl-5 bydefault_show" id="menu-dish">
+                                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/1.jpeg" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Bridal Cake</h3>
+                                           
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>wedding</b>
+                                                </li>
+                                                <li>
+                                                    <p>Rating</p>
+                                                    <b>10/10</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>Rs. 4500</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/2.jpeg" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            4.3
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Amma-special cake</h3>
+                                            
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Birthday</b>
+                                                </li>
+                                                <li>
+                                                    <p>Rating</p>
+                                                    <b>9.5/10</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>Rs. 3500</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/3.jpeg" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            4
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Face-Art</h3>
+                                       
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Drawing</b>
+                                                </li>
+                                                <li>
+                                                    <p>Rating</p>
+                                                    <b>9.5/10</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>Rs. 3500</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/4.jpeg" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            4.5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Family Celebration</h3>
+                                     
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Birthday</b>
+                                                </li>
+                                                <li>
+                                                    <p>Ratings</p>
+                                                    <b>9.5/10</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>Rs. 4000</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/5.jpeg" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Thaththa-Special</h3>
+                                    
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Birthday</b>
+                                                </li>
+                                                <li>
+                                                    <p>Ratings</p>
+                                                    <b>9.5/10</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>Rs. 4000</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 6 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/6.jpeg" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Happy Journey </h3>
+                                  
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Flight</b>
+                                                </li>
+                                                <li>
+                                                    <p>Ratings</p>
+                                                    <b>9/10</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>Rs. 3000</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="book-table section bg-light">
+                <div class="book-table-shape">
+                    <img src="assets/images/table-leaves-shape.png" alt="">
+                </div>
+
+                <div class="book-table-shape book-table-shape2">
+                    <img src="assets/images/table-leaves-shape.png" alt="">
+                </div>
+
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">Book Order</p>
+                                    <h2 class="h2-title">Opening Hours</h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book-table-info">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4">
+                                    <div class="table-title text-center">
+                                        <h3>Monday to Friday</h3>
+                                        <p>9:00 am - 22:00 pm</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="call-now text-center">
+                                        <i class="uil uil-phone"></i>
+                                        <a href="">071-4205611</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="call-now text-center">
+                                        <i class="uil uil-phone"></i>
+                                        <a href="">076-7640440</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="gallery">
+                            <div class="col-lg-10 m-auto">
+                                <div class="book-table-img-slider" id="icon">
+                                    <div class="swiper-wrapper">
+                                        <a href="assets/images/bt1.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt1.jpeg)"></a>
+                                        <a href="assets/images/bt2.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt2.jpeg)"></a>
+                                        <a href="assets/images/bt3.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt3.jpeg)"></a>
+                                        <a href="assets/images/bt4.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt4.jpeg)"></a>
+                                        <a href="assets/images/bt1.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt1.jpeg)"></a>
+                                        <a href="assets/images/bt2.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt2.jpeg)"></a>
+                                        <a href="assets/images/bt3.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt3.jpeg)"></a>
+                                        <a href="assets/images/bt4.jpg" data-fancybox="table-slider"
+                                            class="book-table-img back-img swiper-slide"
+                                            style="background-image: url(assets/images/bt4.jpeg)"></a>
+                                    </div>
+
+                                    <div class="swiper-button-wp">
+                                        <div class="swiper-button-prev swiper-button">
+                                            <i class="uil uil-angle-left"></i>
+                                        </div>
+                                        <div class="swiper-button-next swiper-button">
+                                            <i class="uil uil-angle-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="our-team section">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">hello !</p>
+                                    <h2 class="h2-title">Meet US</h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row team-slider">
+                            <div class="swiper-wrapper">
+                                <div class="col-lg-4 swiper-slide">
+                                    <div class="team-box text-center">
+                                        <div style="background-image: url(assets/images/chef/c1.jpeg);"
+                                            class="team-img back-img">
+
+                                        </div>
+                                        <h3 class="h3-title">Chuloda Bandaranayake</h3>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 swiper-slide">
+                                    <div class="team-box text-center">
+                                        <div style="background-image: url(assets/images/chef/c2.jpeg);"
+                                            class="team-img back-img">
+
+                                        </div>
+                                        <h3 class="h3-title">Lahiru  Siriwardhana</h3>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                
+                            <div class="swiper-button-wp">
+                                <div class="swiper-button-prev swiper-button">
+                                    <i class="uil uil-angle-left"></i>
+                                </div>
+                                <div class="swiper-button-next swiper-button">
+                                    <i class="uil uil-angle-right"></i>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials section bg-light">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">What they say</p>
+                                    <h2 class="h2-title">What our customers <span>say about us</span></h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="testimonials-img">
+                                    <img src="assets/images/testimonial-img.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url(assets/images/testimonials/t1.jpg);">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:85%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Pankaja Dilushan
+                                                </h3>
+                                                <p>ස්තුතියි  මගේ උපන්දින කේක් එකට.ඒක හරිම රසයි.ඔබට සුභ පතනවා
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url(assets/images/testimonials/t2.jpg);">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:80%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Isuru Yuresha
+                                                </h3>
+                                                <p>කේක් එකට ස්තූතියි. මම ඔබ දෙපලට සුභ පතනවා.මම රන් අයියා  
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url(assets/images/testimonials/t3.jpg);">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:89%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Kumuditha Osada 
+                                                </h3>
+                                                <p>මල්ලි මගේ දුව ඔයාගේ කේක් වලට කැමතියි.චූටි අය්යා
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url(assets/images/testimonials/t4.jpg);">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:100%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    Uditha Chalanka
+                                                </h3>
+                                                <p>
+                                                    ඔබගේ අන්තර්ජාල ව්‍යාපාරයට සුභ පැතුම්
+                                                </p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <!-- footer starts  -->
+            <footer class="site-footer" id="contact">
+                <div class="top-footer section">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="footer-info">
+                                        <div class="footer-logo">
+                                            <a href="index.html">
+                                                <img src="logo.png" alt="">
+                                            </a>
+                                        </div>
+                                        <p>We make cakes with love ,passion and our goal is to Be the Leading Cake Business
+                                        </p>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-github-alt"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="footer-flex-box">
+                                        <div class="footer-table-info">
+                                            <h3 class="h3-title">open hours</h3>
+                                            <ul>
+                                                <li><i class="uil uil-clock"></i> Mon-Thurs : 9am - 22pm</li>
+                                                <li><i class="uil uil-clock"></i> Fri-Sun : 11am - 22pm</li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-menu food-nav-menu">
+                                            <h3 class="h3-title">Links</h3>
+                                            <ul class="column-2">
+                                                <li>
+                                                    <a href="#home" class="footer-active-menu">Home</a>
+                                                </li>
+                                                <li><a href="#about">About</a></li>
+                                                <li><a href="#menu">Menu</a></li>
+                                                <li><a href="#gallery">Gallery</a></li>
+                                                <li><a href="#blog">Blog</a></li>
+                                                <li><a href="#contact">Contact</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-menu">
+                                            <h3 class="h3-title">meraki-Cakes</h3>
+                                            <ul>
+                                                <li><a href="#">Terms & Conditions</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="#">Cookie Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2024 <span class="name">Janidu@sa</span>All Rights Reserved.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scrolltop"><i class="uil uil-angle-up"></i></button>
+                    </div>
+                </div>
+            </footer>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- jquery  -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!-- fontawesome  -->
+    <script src="assets/js/font-awesome.min.js"></script>
+
+    <!-- swiper slider  -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- mixitup -- filter  -->
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+
+    <!-- fancy box  -->
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+
+    <!-- parallax  -->
+    <script src="assets/js/parallax.min.js"></script>
+
+    <!-- gsap  -->
+    <script src="assets/js/gsap.min.js"></script>
+
+    <!-- scroll trigger  -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!-- scroll to plugin  -->
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <!-- rellax  -->
+    <!-- <script src="assets/js/rellax.min.js"></script> -->
+    <!-- <script src="assets/js/rellax-custom.js"></script> -->
+    <!-- smooth scroll  -->
+    <script src="assets/js/smooth-scroll.js"></script>
+    <!-- custom js  -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
